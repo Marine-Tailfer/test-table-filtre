@@ -17,11 +17,22 @@
             padding: 0;
             margin: 0;
         }
+		
         </style>
-        <title></title>
+        <title>Table test </title>
+	
     </head>
+		
+		<div class="header">
+	    
+		<div>
+			<h1 class="titre">Carte test du plugin Qgis2Web</h1>
+		</div>
+	
+	</div> 
+		
     <body>
-        <div id="map">
+	<div id="map">
         </div>
         <script src="js/qgis2web_expressions.js"></script>
         <script src="js/leaflet.js"></script>
@@ -35,6 +46,7 @@
         <script src="js/tailDT.js"></script>
 <script src="js/nouislider.min.js"></script>
 <script src="js/wNumb.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="data/BDjson_1.js"></script>
         <script>
         var map = L.map('map', {
@@ -276,6 +288,7 @@
             Ville_options_str  += '<option value="Cherbourg">Cherbourg</option>';
             Ville_options_str  += '<option value="Lyon">Lyon</option>';
             Ville_options_str  += '<option value="Paris">Paris</option>';
+			Ville_options_str  += '<option value="Toulouse">Toulouse</option>';
             sel_Ville.innerHTML = Ville_options_str;
             div_Ville.appendChild(sel_Ville);
             var lab_Ville = document.createElement('div');
@@ -326,6 +339,9 @@
                 filterFunc();
             };
             div_Sport.appendChild(reset_Sport);
-        </script>
+ 
+
+		</script>
+		
     </body>
 </html>
